@@ -78,4 +78,10 @@ return require("packer").startup(function(use)
 
 	-- Surround
 	use({ "echasnovski/mini.surround" })
+
+	-- LuaLine
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
 end)
