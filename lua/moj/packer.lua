@@ -23,6 +23,15 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+	-- OneDark
+	use({
+		"navarasu/onedark.nvim",
+		as = "onedark",
+		config = function()
+			vim.cmd("colorscheme onedark")
+		end,
+	})
+
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 

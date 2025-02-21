@@ -1,10 +1,20 @@
-function ColorMyPencils(color)
-	color = color or "rose-pine"
-	vim.cmd.colorscheme(color)
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
-	-- transparent background
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
+-- OneDark
+-- require("onedark").setup({
+-- 	style = "warm",
+-- 	transparent = true,
+-- })
+-- require("onedark").load()
 
-ColorMyPencils()
+-- Rose-Pine
+require("rose-pine").setup({
+	variant = "moon",
+	dark_variant = "moon",
+
+	styles = {
+		transparency = true,
+	},
+})
+vim.cmd("colorscheme rose-pine")
