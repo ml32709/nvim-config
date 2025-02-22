@@ -6,3 +6,22 @@ vim.keymap.set(
 	'<cmd>lua require("telescope.builtin").live_grep({glob_pattern = "!{spec, test}"})<CR>'
 )
 vim.keymap.set("n", "<C-p>", builtin.git_files, {})
+
+require("telescope").setup({
+	defaults = {
+		file_ignore_patterns = {
+			-- folders
+			".git",
+			".github",
+
+			-- files
+			"%.meta",
+			"%.anim",
+			"%.png",
+			"%.asset",
+			"%.prefab",
+			"%.controller",
+			"%.unity",
+		},
+	},
+})

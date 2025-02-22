@@ -3,7 +3,12 @@ require("mason").setup()
 
 -- mason-lspconfig
 require("mason-lspconfig").setup({
-	ensure_installed = { "lua_ls", "ts_ls", "jdtls" },
+	ensure_installed = {
+		"lua_ls",
+		"ts_ls",
+		"jdtls",
+		"omnisharp",
+	},
 })
 
 -- lspconfig
@@ -16,6 +21,9 @@ lspconfig.ts_ls.setup({
 	capabilities = capabilities,
 })
 lspconfig.jdtls.setup({
+	capabilities = capabilities,
+})
+lspconfig.omnisharp.setup({
 	capabilities = capabilities,
 })
 
