@@ -7,7 +7,7 @@ require("mason-lspconfig").setup({
 		"lua_ls",
 		"ts_ls",
 		"jdtls",
-		"omnisharp",
+		"csharp_ls"
 	},
 })
 
@@ -23,7 +23,7 @@ lspconfig.ts_ls.setup({
 lspconfig.jdtls.setup({
 	capabilities = capabilities,
 })
-lspconfig.omnisharp.setup({
+lspconfig.csharp_ls.setup({
 	capabilities = capabilities,
 })
 
