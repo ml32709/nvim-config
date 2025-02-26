@@ -78,13 +78,6 @@ return require("packer").startup(function(use)
 		end,
 	})
 
-	-- TabOut
-	use({
-		"abecodes/tabout.nvim",
-		wants = { "nvim-treesitter" }, -- (optional) or require if not used so far
-		after = { "nvim-cmp" }, -- if a completion plugin is using tabs load it before
-	})
-
 	-- Surround
 	use({ "echasnovski/mini.surround" })
 

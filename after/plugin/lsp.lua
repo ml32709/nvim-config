@@ -7,7 +7,8 @@ require("mason-lspconfig").setup({
 		"lua_ls",
 		"ts_ls",
 		"jdtls",
-		"csharp_ls"
+		"csharp_ls",
+		"pyright",
 	},
 })
 
@@ -24,6 +25,9 @@ lspconfig.jdtls.setup({
 	capabilities = capabilities,
 })
 lspconfig.csharp_ls.setup({
+	capabilities = capabilities,
+})
+lspconfig.pyright.setup({
 	capabilities = capabilities,
 })
 
