@@ -14,3 +14,5 @@ vim.g.mapleader = " "
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+
+vim.g.python3_host_prog = "C:/Users/matth/AppData/Local/Programs/Python/Python312/python.exe"
