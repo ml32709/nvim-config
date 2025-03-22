@@ -32,6 +32,15 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+	-- Gruvbox
+	use({
+		"ellisonleao/gruvbox.nvim",
+		as = "gruvbox",
+		config = function()
+			vim.cmd("colorscheme gruvbox")
+		end,
+	})
+
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 

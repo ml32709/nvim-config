@@ -94,6 +94,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\matth\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  gruvbox = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\matth\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\matth\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
@@ -197,14 +203,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: onedark
-time([[Config for onedark]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme onedark\bcmd\bvim\0", "config", "onedark")
-time([[Config for onedark]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: gruvbox
+time([[Config for gruvbox]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
+time([[Config for gruvbox]], false)
+-- Config for: onedark
+time([[Config for onedark]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme onedark\bcmd\bvim\0", "config", "onedark")
+time([[Config for onedark]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
