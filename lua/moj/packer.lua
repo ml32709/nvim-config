@@ -14,24 +14,6 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
-	-- Rose-Pine
-	use({
-		"rose-pine/neovim",
-		as = "rose-pine",
-		config = function()
-			vim.cmd("colorscheme rose-pine")
-		end,
-	})
-
-	-- OneDark
-	use({
-		"navarasu/onedark.nvim",
-		as = "onedark",
-		config = function()
-			vim.cmd("colorscheme onedark")
-		end,
-	})
-
 	-- Gruvbox
 	use({
 		"ellisonleao/gruvbox.nvim",
